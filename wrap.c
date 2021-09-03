@@ -37,7 +37,7 @@ static const char curdir[] = "./";
 #placeholder 2 start
 char* Hmalloc (unsigned int size)
 {
-  unsigned int s = (size + 4) & 0xfffffffc; /* 4 GB max */
+  unsigned int s = size + 1;
   char* p = malloc (s);
   if (p != NULL)
     memset (p, 0, s);

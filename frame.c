@@ -33,12 +33,12 @@ static const char* copyright_and_usage[] = {
 // The relative path to a current folder
 static const char curdir[] = "./";
 
-/* Hmalloc: malloc what is needed up to 4 GB max,
- * add 4 bytes (32 bit) padding and fill with zeros the allocation
+/* Hmalloc: malloc what is needed with an additional one byte for a padding
+ * and fill with zeros the allocation
  */
 char* Hmalloc (unsigned int size)
 {
-  unsigned int s = (size + 4) & 0xfffffffc; /* 4 GB max */
+  unsigned int s = size + 1;
   char* p = malloc (s);
   if (p != NULL)
     memset (p, 0, s);
