@@ -37,5 +37,5 @@
 
 ### TODO
 
-- Implement POSIX file opertions and threading in order to use the srcpck on UNIX platforms (Linux, Android and Mac OS X)
+- Implement POSIX file opertions and threading in order to use the srcpck on UNIX platforms (Linux and Mac OS X)
 - Implement a passing of commandline arguments to embedded scripts for other interpreters, not only the bash
