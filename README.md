@@ -12,7 +12,7 @@
 
 ### Dependencies
 
-- Currently the srcpck works under Windows platform only, because it uses WinAPI in part of file operations and threading, with the exception of these it depends on C runtime only
+- Currently the srcpck works under Windows platform only, because it uses WinAPI in part of file operations and a process management, with the exception of these it depends on C runtime only
 - Currently commandline arguments are passed to the embedded script as a parameters of the "set --" command, therefore that works only for bash scripts only
 - To build from sources one need the bash, sed and gcc utilities
 
@@ -37,5 +37,5 @@
 
 ### TODO
 
-- Implement POSIX file opertions and threading in order to use the srcpck on UNIX platforms (Linux and Mac OS X)
+- Implement POSIX file opertions and a process management in order to use the srcpck on UNIX platforms (Linux and Mac OS X)
 - Implement a passing of commandline arguments to embedded scripts for other interpreters, not only the bash
